@@ -1,5 +1,36 @@
-vllm
+# Core numerical/data stack
+numpy
+pandas
+scipy
 scikit-learn
-wordfreq
-wandb
+tqdm
+pyarrow
 
+# Deep learning and NLP
+torch
+transformers
+datasets
+accelerate
+sentencepiece
+protobuf
+tokenizers
+
+# Experiment utilities
+wandb
+matplotlib
+wordfreq
+nltk
+spacy
+json-repair
+
+# LLM generation / fine-tuning experiments
+vllm
+openai
+peft
+trl
+unsloth
+
+# Baselines and meta-learning experiments
+cmdstanpy
+catsim
+higher

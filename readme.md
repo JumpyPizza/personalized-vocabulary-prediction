@@ -34,7 +34,7 @@ These data are used in the experiments, but are not redistributed in this repo:
 The paper binarizes SVD12K labels by mapping scores 1-3 to unknown and 4-5 to known. EVKD multiple-choice responses are converted to binary labels based on correctness.
 
 
-## Extra experiments that fail
+## Extra experiments not reported in the paper
 This repo also includes some experiments that we have tried but did not yield good performance, and are not reported in the paper. 
 1. RL in active learning:  
 RL appears a natural method for to train models that can select the best samples for a small budget. However, we tried several RL algorithms and none of them converge. 

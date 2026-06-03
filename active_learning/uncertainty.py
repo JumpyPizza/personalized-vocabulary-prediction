@@ -10,6 +10,7 @@ from torch.utils.data import DataLoader
 from .base import ActiveLearningStrategy, register_strategy
 
 
+@register_strategy("uncertainty_entropy")
 @register_strategy("uncertainty")
 class UncertaintyEntropy(ActiveLearningStrategy):
     """

@@ -10,8 +10,12 @@ from collections import defaultdict
 from tqdm import tqdm
 import random
 import json
-from read_resources import load_labels, read_sentences_words
-from utils import SentenceTokenizerFast
+try:
+    from .read_resources import load_labels, read_sentences_words
+    from .utils import SentenceTokenizerFast
+except ImportError:
+    from read_resources import load_labels, read_sentences_words
+    from utils import SentenceTokenizerFast
 from copy import deepcopy
 
 

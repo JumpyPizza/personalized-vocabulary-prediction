@@ -28,7 +28,13 @@ from transformers import (
 )
 
 from active_learning.base import StrategyConfig, use_strategy
-from active_learning.base import sequence_embedding
+from active_learning.coreset import sequence_embeddings
+
+# Import strategy modules so their @register_strategy decorators populate the registry.
+import active_learning.bald
+import active_learning.coreset
+import active_learning.eer
+import active_learning.uncertainty
 
 # ---- fixed mapping from earlier ----
 LABEL_MAP = {0:-100, "0": -100, "1": 0, "2": 0, "3": 0, "4": 1, "5": 1}
